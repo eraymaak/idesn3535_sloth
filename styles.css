@@ -1,0 +1,16 @@
+body{
+		font-family: 'Cuprum', sans-serif;
+	}
+#my_header, h1{
+		color: orange;
+	}
+.my_list_item{
+		font-size: 25px;
+	}
+.my_list_item a{
+		color: #777777;
+	}
+.my_list_item a:hover{
+		color: blue;
+	}
+			
