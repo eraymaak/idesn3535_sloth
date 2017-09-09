@@ -1,16 +1,71 @@
-body{
-		font-family: 'Cuprum', sans-serif;
-	}
-#my_header, h1{
-		color: orange;
-	}
-.my_list_item{
-		font-size: 25px;
-	}
 .my_list_item a{
-		color: #777777;
+	color: green;
 	}
 .my_list_item a:hover{
-		color: blue;
+	color: blue;
 	}
-			
+
+.img1{
+	width: 50%;
+	border-radius: 5px;
+	}
+.img2{
+	width: 50%;
+	border-radius: 5px;
+	float: left;
+	}
+
+body{
+	background-color: orange;
+	}
+#header{
+	width: 80%;
+	background-color: #FFDF00;
+	border: 2px dotted purple;
+	border-radius: 5px;
+	font-family: 'Chelsea Market', sans serif;
+	color: purple;
+	margin: auto;
+	text-align: center;
+	}
+#content_title{
+	width: 80%;
+	background-color: #FFDF00;
+	border: 2px dotted purple;
+	border-radius: 5px;
+	font-family: 'IM Fell English', serif;
+	color: purple;
+	margin: auto;
+	margin-top: 10px;
+	text-align: center;
+	}	
+#baby_sloth_photo{
+	width: 100%;
+	margin-top: 10px;
+	}
+#blurb1{
+	width: 49%;
+	float: right;
+	background-color: #FFDF00;
+	border: 2px solid purple;
+	border-radius: 5px;
+	font-family: 'Esteban', serif;
+	color: purple;
+	text-align: center;
+	font-size: 1.5em;
+	}
+#content{
+	width: 100%;
+	font-family: 'Esteban', serif;
+	color: white;
+	margin: auto;
+	margin-top: 10px;
+	font-size: 20px;
+	overflow: scroll;
+	}
+#footer{
+	text-align: center;
+	font-family: 'IM Fell English', serif;
+	color: purple;
+	background-color: #FFDF00;
+	}
