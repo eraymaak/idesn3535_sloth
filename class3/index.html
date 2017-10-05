@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript!</title>
+		<script>
+			let javascript_info = "Javascript does have a purpose!";
+			console.log(javascript_info + " 😊");
+			console.log(45);
+			console.log(true);
+			console.log(undefined);
+			if (javascript_info === 5) {
+				console.log('yay!');
+			} else {
+				console.log('boo 😩');
+			}
+			//Returns factorial of the input//
+			function factorial(input) {
+				const my_input = document.getElementById("my_input");
+				input = my_input.value;
+				//Definition of a factorial//
+				let return_value = 1;
+				while (input > 0){
+					//return_value = input * return_value//
+					return_value *= input;
+					//input = input - 1//
+					input--;
+				}
+				alert("The factorial of " + my_input.value + "! = " + return_value);
+				return return_value;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Javascript!</h1>
+		<input type="text" id="my_input"/>
+		<button id="factorial_button">
+			Calculate Factorial!
+		</button>
+		<script>
+			const factbutton = document.getElementById("factorial_button");
+			factbutton.addEventListener('click', factorial)
+		</script>
+	</body>
+</html>

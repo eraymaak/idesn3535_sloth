@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="../normalize.css" rel="stylesheet"/>
+		<style>
+			#header{
+				background: yellow;
+				width: 100%;
+				height: 80px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			#header_left{
+				width: 35%;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+			#logo_link{
+				background: red;
+				width: 100px;
+				height: 60px;
+			}
+			#search_bar{
+				width: 70%;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+			}
+			#bar{
+				background: white;
+				width: 200px;
+				height: 30px;
+			}
+			#bar_button{
+				background: red;
+				width: 60px;
+				height: 40px;
+			}
+			#header_right{
+				width: 40%;
+				height: 60px;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			#link_button1{
+				background: red;
+				width: 95px;
+				height: 40px;
+			}
+			#link_button2{
+				background: red;
+				width: 80px;
+				height: 40px;
+			}
+			#link_button3{
+				background: red;
+				width: 65px;
+				height: 40px;
+			}
+			#link_button4{
+				background: red;
+				width: 50px;
+				height: 40px;
+			}
+			#menu{
+				background: pink;
+				width: 100%;
+				height: 50px;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+			}
+			#menu_zone{
+				width: 90%;
+				display: flex;
+				justify-content: space-evenly;
+			}
+			#menu_buttons{
+				background: green;
+				width: 130px;
+				height: 50px;
+			}
+			#body_section1{
+				background: orange;
+				width: 100%;
+				height: 350px;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			#img_link_main{
+				background: blue;
+				width: 70%;
+				height: 300px;
+			}
+			#img_link_right{
+				width: 25%;
+				height: 300px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+			}
+			#img_link2{
+				background: blue;
+				width: 100%;
+				height: 140px;
+			}
+			#img_link3{
+				background: blue;
+				width: 100%;
+				height: 140px;
+			}
+			#body_section2{
+				background: gray;
+				width: 100%;
+				height: 150px;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			#text_boxes{
+				background: maroon;
+				width: 28%;
+				height: 100px;
+			}
+			#body_section3{
+				background: lightblue;
+				width: 100%;
+				height: 250px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			#recently_viewed{
+				text-align: center;
+			}
+			#products{
+				width: 95%;
+				height: 200px;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			#product_listings{
+				background: purple;
+				width: 15%;
+				height: 150px;
+			}
+			#body_section4{
+				background: lime;
+				width: 100%;
+				height: 250px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			#shop_by{
+				text-align: center;
+			}
+			#categories{
+				width: 95%;
+				height: 200px;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			#category_boxes{
+				background: purple;
+				width: 15%;
+				height: 150px;
+			}
+			@media(max-width: 768px){
+				.disappear1{
+					display: none;
+				}
+				.disappear2{
+					display: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div id="header_left">
+				<div id="logo_link">
+				</div>
+				<div id="search_bar">
+					<div id="bar">
+					</div>
+					<div id="bar_button">
+					</div>
+				</div>
+			</div>
+			<div id="header_right">
+				<div id="link_button1">
+				</div>
+				<div id="link_button2">
+				</div>
+				<div id="link_button3">
+				</div>
+				<div id="link_button4">
+				</div>
+			</div>
+		</div>
+		<div id="menu">
+			<div id="menu_zone">
+				<div id="menu_buttons">
+				</div>
+				<div id="menu_buttons">
+				</div>
+				<div id="menu_buttons">
+				</div>
+				<div id="menu_buttons">
+				</div>
+				<div id="menu_buttons">
+				</div>
+				<div id="menu_buttons" class="disappear2">
+				</div>
+				<div id="menu_buttons" class="disappear1">
+				</div>
+			</div>
+		</div>
+		<div id="body">
+			<div id="body_section1">
+				<div id="img_link_main">
+				</div>
+				<div id="img_link_right">
+					<div id="img_link2">
+					</div>
+					<div id="img_link3">
+					</div>
+				</div>
+			</div>
+			<div id="body_section2">
+				<div id="text_boxes">
+				</div>
+				<div id="text_boxes">
+				</div>
+				<div id="text_boxes">
+				</div>
+			</div>
+			<div id="body_section3">
+				<h1 id="recently_viewed">Recently viewed &amp; more</h1>
+				<div id="products">
+					<div id="product_listings">
+					</div>
+					<div id="product_listings">
+					</div>
+					<div id="product_listings">
+					</div>
+					<div id="product_listings">
+					</div>
+					<div id="product_listings">
+					</div>
+					<div id="product_listings">
+					</div>
+				</div>
+			</div>
+			<div id="body_section4">
+				<h1 id="shop_by">Shop by category</h1>
+				<div id="categories">
+					<div id="category_boxes">
+					</div>
+					<div id="category_boxes">
+					</div>
+					<div id="category_boxes">
+					</div>
+					<div id="category_boxes">
+					</div>
+					<div id="category_boxes">
+					</div>
+					<div id="category_boxes">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+<html>
