@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="../normalize.css" rel="stylesheet"/>
+		<style>
+			#header{
+				background: yellow;
+				width: 100%;
+				height: 80px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			#header_right{
+				width: 40%;
+				height: 60px;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			#big_search_bar{
+				background: cyan;
+				width: 100%;
+				height: 50px;
+				display: none;
+			}
+			@media(max-width: 900px){
+				#big_search_bar.appear{
+					display: block;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+				#search_bar.appear{
+					visibility: hidden;
+				}
+				#body_section1.shift{
+					height: 500px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+				#img_link_main.shift{
+					width: 95%;
+					margin-top: 25px;
+				}
+				#img_link_right.shift{
+					width: 100%;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+				}
+				#img_link1.shift{
+					width: 70%;
+					height: 175px;
+				}
+				#img_link2.shift{
+					width: 25%;
+					height: 175px;
+				}
+				#body_section3.shift{
+					height: 800px;
+				}
+				#prod_list.shift{
+					width: 255px;
+					height: 255px;
+				}
+				#products.shift{
+					height: 700px;
+					display: flex;
+					flex-wrap: wrap;
+				}
+				#body_section4.shift{
+					height: 800px;
+				}
+				#cat_box.shift{
+					width: 255px;
+					height: 255px;
+				}
+				#categories.shift{
+					height: 700px;
+					display: flex;
+					flex-wrap: wrap;
+				}
+			}
+			@media(max-width: 480px){
+				#menu.appear{
+					display:none;
+				}
+			}
+			@media(max-width: 420px){
+				#img_link_right.shift{
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+				}
+				#img_link1.shift{
+					width: 95%;
+					height: 175px;
+					margin-top: 15px;
+				}
+				#img_link2.shift{
+					width: 95%;
+					height: 175px;
+					margin-top: 15px;
+					margin-bottom: 15px;
+				}
+				#body_section2.shift{
+					display: flex;
+					flex-direction: column;
+				}
+				#text_widen.text_box{
+					width: 95%;
+					height: 100px;
+				}
+				#text_jump.text_box{
+					display: none;
+				}
+				#prod_list.shift{
+					width: 95%;
+					height: 50px;
+				}
+				#body_section3.shift{
+					height: 500px;
+				}
+				#cat_box.shift{
+					width: 95%;
+					height: 50px;
+				}
+				#body_section4.shift{
+					height: 500px;
+				}
+			}
+			#header_left{
+				width: 45%;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				margin-left: 10px;
+			}
+			#logo_link{
+				background: red;
+				width: 100px;
+				height: 60px;
+			}
+			#search_bar{
+				width: 70%;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+			}
+			#bar{
+				background: white;
+				width: 75%;
+				height: 30px;
+			}
+			#big_bar{
+				background: white;
+				width: 85%;
+				height: 30px;
+			}
+			#bar_button{
+				background: red;
+				width: 60px;
+				height: 40px;
+			}
+			.link_button{
+				background: red;
+				width: 65px;
+				height: 40px;
+			}
+			#menu{
+				background: pink;
+				width: 100%;
+				height: 50px;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			.menu_button{
+				background: green;
+				width: 90px;
+				height: 50px;
+			}
+			#body_section1{
+				background: orange;
+				width: 100%;
+				height: 350px;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			#img_link_main{
+				background: blue;
+				width: 70%;
+				height: 300px;
+			}
+			#img_link_right{
+				width: 25%;
+				height: 300px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+			}
+			#img_link1{
+				background: blue;
+				width: 100%;
+				height: 170px;
+			}
+			#img_link2{
+				background: blue;
+				width: 100%;
+				height: 110px;
+			}
+			#body_section2{
+				background: gray;
+				width: 100%;
+				height: 150px;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			.text_box{
+				background: maroon;
+				width: 28%;
+				height: 100px;
+			}
+			#body_section3{
+				background: lightblue;
+				width: 100%;
+				height: 250px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			#recently_viewed{
+				text-align: center;
+			}
+			#products{
+				width: 95%;
+				height: 200px;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			#prod_list{
+				background: purple;
+				width: 125px;
+				height: 125px;
+			}
+			#body_section4{
+				background: lime;
+				width: 100%;
+				height: 250px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			#shop_by{
+				text-align: center;
+			}
+			#categories{
+				width: 95%;
+				height: 200px;
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+			}
+			#cat_box{
+				background: purple;
+				width: 125px;
+				height: 125px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id = "header">
+			<div id = "header_left">
+				<div id = "logo_link">
+				</div>
+				<div id = "search_bar" class = "appear">
+					<div id = "bar">
+					</div>
+					<div id = "bar_button">
+					</div>
+				</div>
+			</div>
+			<div id="header_right">
+				<div class = "link_button">
+				</div>
+				<div class = "link_button">
+				</div>
+				<div class = "link_button">
+				</div>
+				<div class = "link_button">
+				</div>
+			</div>
+		</div>
+		<div id = "big_search_bar" class = "appear">
+			<div id = "big_bar">
+			</div>
+			<div id ="bar_button">
+			</div>
+		</div>
+		<div id="menu" class = "appear">
+			<div class = "menu_button">
+			</div>
+			<div class = "menu_button">
+			</div>
+			<div class = "menu_button">
+			</div>
+			<div class = "menu_button">
+			</div>
+			<div class = "menu_button">
+			</div>
+			<div class = "menu_button">
+			</div>
+			<div class = "menu_button">
+			</div>
+		</div>
+		<div>
+			<div id = "body_section1" class = shift>
+				<div id = "img_link_main" class = shift>
+				</div>
+				<div id = "img_link_right" class = "shift">
+					<div id = "img_link1" class = "shift">
+					</div>
+					<div id = "img_link2" class = "shift">
+					</div>
+				</div>
+			</div>
+			<div id = "body_section2" class = "shift">
+				<div id = "text_widen" class = "text_box">
+				</div>
+				<div id = "text_jump" class = "text_box">
+				</div>
+				<div id = "text_jump" class = "text_box">
+				</div>
+			</div>
+			<div id = "body_section3" class = "shift">
+				<h1 id = "recently_viewed">Recently viewed &amp; more</h1>
+				<div id = "products" class = "shift">
+					<div id = "prod_list" class = "shift">
+					</div>
+					<div id = "prod_list" class = "shift">
+					</div>
+					<div id = "prod_list" class = "shift">
+					</div>
+					<div id = "prod_list" class = "shift">
+					</div>
+					<div id = "prod_list" class = "shift">
+					</div>
+					<div id = "prod_list" class = "shift">
+					</div>
+				</div>
+			</div>
+			<div id = "body_section4" class = "shift">
+				<h1 id = "shop_by">Shop by category</h1>
+				<div id = "categories" class = "shift">
+					<div id = "cat_box" class = "shift">
+					</div>
+					<div id = "cat_box" class = "shift">
+					</div>
+					<div id = "cat_box" class = "shift">
+					</div>
+					<div id = "cat_box" class = "shift">
+					</div>
+					<div id = "cat_box" class = "shift">
+					</div>
+					<div id = "cat_box" class = "shift">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+<html>

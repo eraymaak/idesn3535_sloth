@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		#buttons {
+			display: flex;
+			justify-content: space-evenly;
+		}
+		#red_button {
+			width: 100px;
+			height: 50px;
+			background: red;
+			color: white;
+		}
+		#red_button.enabled {
+			width: 100px;
+			height: 50px;
+			background: white;
+			color: black;
+		}
+		#blue_button {
+			width: 100px;
+			height: 50px;
+			background: blue;
+			color: white;
+		}
+		#blue_button.enabled {
+			width: 100px;
+			height: 50px;
+			background: white;
+			color: black;
+		}
+		#yellow_button {
+			width: 100px;
+			height: 50px;
+			background: yellow;
+			color: black;
+		}
+		#yellow_button.enabled {
+			width: 100px;
+			height: 50px;
+			background: white;
+			color: black;
+		}
+		#splotch {
+			width: 100px;
+			height: 100px;
+			border-radius: 100px;
+			margin: auto;
+			margin-top: 100px;
+			border: 1px solid black;
+		}
+		#splotch.blue {
+			background: blue;
+		}
+		#splotch.red {
+			background: red;
+		}
+		#splotch.yellow {
+			background: yellow;
+		}
+		#splotch.blue.red {
+			background: purple;
+		}
+		#splotch.blue.yellow {
+			background: green;
+		}
+		#splotch.red.yellow {
+			background: orange;
+		}
+		#splotch.red.yellow.blue {
+			background: black;
+		}
+		</style>
+		<script>
+			function addRed() {
+				const splotch_hue = document.getElementById("splotch");
+				splotch_hue.classList.toggle("red");
+				const button_enabler = document.getElementById("red_button");
+				button_enabler.classList.toggle("enabled");
+			}
+			function addBlue() {
+				const splotch_hue = document.getElementById("splotch");
+				splotch_hue.classList.toggle("blue");
+				const button_enabler = document.getElementById("blue_button");
+				button_enabler.classList.toggle("enabled");
+			}
+			function addYellow() {
+				const splotch_hue = document.getElementById("splotch");
+				splotch_hue.classList.toggle("yellow");
+				const button_enabler = document.getElementById("yellow_button");
+				button_enabler.classList.toggle("enabled");
+			}
+		</script>
+	</head>
+	<body>
+		<div id = buttons>
+			<button id="red_button">
+				Add Red
+			</button>
+			<button id="blue_button">
+				Add Blue
+			</button>
+			<button id="yellow_button">
+				Add Yellow
+			</button>
+		</div>
+		<div id = "splotch">
+		</div>
+		<script>
+			const addRedButton = document.getElementById("red_button");
+			addRedButton.addEventListener('click', addRed);
+			const addBlueButton = document.getElementById("blue_button");
+			addBlueButton.addEventListener('click', addBlue);
+			const addYellowButton = document.getElementById("yellow_button");
+			addYellowButton.addEventListener('click', addYellow);
+		</script>
+	</body>
+</html>

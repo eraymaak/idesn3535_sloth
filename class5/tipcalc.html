@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tip Calculator</title>
+		<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+		<style>
+			.font {
+				font-family: 'Questrial', sans-serif;
+				text-align: center;
+			}
+			#container {
+				width: 500px;
+				height: 500px;
+				background-color: orange;
+				margin: auto;
+				border: 2px solid red;
+			}
+			.sections {
+				width: 400px;
+				display: flex;
+				flex-direction: column;
+				margin: auto;
+			}
+		</style>
+		<script>
+			function tipCalc(input) {
+				const tip = (parseFloat(document.getElementById("percentage_input").value) / 100) * parseFloat(document.getElementById("bill_input").value);
+				console.log(tip);
+				const total = tip + document.getElementById("bill_input");
+				console.log(total);
+				const calc1 = document.getElementById("tip_final");
+				calc1.innerText = tip;
+				const calc2 = document.getElementById("total_final");
+				calc2.innerText = total;
+			}
+		</script>
+	</head>
+	<body>
+		<div id = container>
+			<h1 class = font>Tip Calculator</h1>
+			<div id = tip_value class = sections>
+				<h2>TIP:&nbsp; $<span id = "tip_final" value = 0.00></span></h2> 
+			</div>
+			<div id = total_value class = sections>
+				<h2>TOTAL:&nbsp; $<span id = "total_final" value = 0.00></span></h2> 
+			</div>
+			<div id = bill class = sections>
+				<h2>Bill:&nbsp;</h2>
+				<input type = "text" id = "bill_input" value = "0.00"/>
+			</div>
+			<div id = percentage class = sections>
+				<h2>Tip %:&nbsp;</h2>
+				<input type = "text" id = "percentage_input" value = "0.00"/>
+			</div>
+		</div>
+		<script>
+			const tip_result = document.getElementById("bill_input")
+			const total_result = document.getElementById("percentage_input")
+			tip_result.addEventListener('keyup', tipCalc)
+			total_result.addEventListener('keyup', tipCalc)
+		</script>
+	</body>
+</html>
