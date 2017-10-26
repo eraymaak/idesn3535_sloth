@@ -28,10 +28,10 @@
 				console.log(tip);
 				const total = tip + document.getElementById("bill_input");
 				console.log(total);
-				const calc1 = document.getElementById("tip_final");
-				calc1.innerText = tip;
-				const calc2 = document.getElementById("total_final");
-				calc2.innerText = total;
+				const calc_tip = document.getElementById("tip_end");
+				calc_tip.innerText = tip;
+				const calc_total = document.getElementById("total_end");
+				calc_total.innerText = total;
 			}
 		</script>
 	</head>
@@ -39,10 +39,10 @@
 		<div id = container>
 			<h1 class = font>Tip Calculator</h1>
 			<div id = tip_value class = sections>
-				<h2>TIP:&nbsp; $<span id = "tip_final" value = 0.00></span></h2> 
+				<h2>TIP:&nbsp; $<span id = "tip_end" value = 0.00></span></h2> 
 			</div>
 			<div id = total_value class = sections>
-				<h2>TOTAL:&nbsp; $<span id = "total_final" value = 0.00></span></h2> 
+				<h2>TOTAL:&nbsp; $<span id = "total_end" value = 0.00></span></h2> 
 			</div>
 			<div id = bill class = sections>
 				<h2>Bill:&nbsp;</h2>
