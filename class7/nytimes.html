@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="../normalize.css" ref="stylesheet"/>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){
+				var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+				var apiKey = "446f733afa674551837856b3a98e7cee";
+				$.ajax({
+					url: url,
+					data: {
+						'api-key': apiKey
+					},
+					success: function(result){
+						const articles = result.response.docs;
+						const articleList = document.createElement('ul');
+						$("main").append(articleList);
+
+						articles.forEach(function(article){
+							const articleItem = document.createElement('li');
+
+							const articleHeader = document.createElement('h2');
+							articleHeader.innerHTML = article.headline.main;
+							articleItem.append(articleHeader);
+							articleList.append(articleItem);
+
+							if (article.multimedia.length > 0 && article.multimedia[0].type === "image"){
+							const articleImage = document.createElement('img');
+							articleImage.src = "https://nytimes.com/" + article.multimedia[0].url;
+							articleItem.append(articleImage);
+							articleItem.classList.add('has-image');
+							}
+
+							const articleSummary = document.createElement('p');
+							articleSummary.innerHTML = article.snippet;
+							articleItem.append(articleSummary);
+
+							const pubDate = document.createElement('div');
+							pubDate.classList.add('pub-date');
+							pubDate.innerText = new Date(article.pub_date);
+							articleItem.append(pubDate);
+						});
+					},
+					error: function(err){
+						throw err;
+					} 
+				})
+			});
+		</script>
+	</head>
+	<body>
+		<div id="main">
+		</div>
+	</body>
+</html>

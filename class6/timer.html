@@ -44,6 +44,12 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script>
 			let seconds = 0;
+			function pad(number){
+				if (number<10){
+					return "0" + number;
+				}
+				return number;
+			}
 			function displayTime(amountOfSeconds){
 				let hrs = 0;
 				let mins = 0;
@@ -55,18 +61,10 @@
 					mins++;
 					amountOfSeconds = amountOfSeconds - 60;
 				}
-				if(hrs < 10){
-					hrs = "0" + hrs;
-				}
-				if(mins < 10){
-					mins = "0" + mins;
-				}
-				if(amountOfSeconds < 10){
-					amountOfSeconds = "0" + amountOfSeconds;
-				}
-				$("#hours").text(hrs);
-				$("#minutes").text(mins);
-				$("#seconds").text(amountOfSeconds);
+			
+				$("#hours").text(pad(hrs));
+				$("#minutes").text(pad(mins));
+				$("#seconds").text(pad(amountOfSeconds));
 			}
 			$(document).ready(function(){
 				$(".control-button").on('click', function(){
