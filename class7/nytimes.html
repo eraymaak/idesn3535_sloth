@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<link href="../normalize.css" ref="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script>
 			$(document).ready(function(){
@@ -15,7 +17,7 @@
 					success: function(result){
 						const articles = result.response.docs;
 						const articleList = document.createElement('ul');
-						$("main").append(articleList);
+						$("#main").append(articleList);
 
 						articles.forEach(function(article){
 							const articleItem = document.createElement('li');
@@ -48,9 +50,20 @@
 				})
 			});
 		</script>
+		<style>
+			#main{
+				width: 75%;
+				margin: auto;
+				font-family: 'Lora', serif;
+			}
+			.title{
+				font-family: 'Archivo Black', sans-serif;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="main">
+			<h1 class="title">New York Times Headlines</h1>
 		</div>
 	</body>
 </html>
