@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="template_engine.js"></script>
+	<link href="../normalize.css" rel="stylesheet"/>
+	<script>
+		$(document).ready(function(){
+			console.log(processTemplate(testString, testContext));
+
+			const testTemplate = getTemplate(testString, testContext);
+			$("body").prepend(testTemplate);
+
+			console.log(testTemplate);
+		});
+	</script>
+</head>
+<body>
+	<p>This is my homepage.</p>
+</body>
+</html>

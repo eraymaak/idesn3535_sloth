@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="../normalize.css" rel="stylesheet"/>
+		<link href="styles.css" rel="stylesheet"/>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="template_engine.js"></script>
+		<script src="templates.js.html"></script>
+		<script>
+			$(document).ready(function(){
+				$("body").prepend(getTemplate(headerTemplate, {class: 'home', title: 'Home'}));
+				$("body").append(footerTemplate);
+			});
+		</script>
+	</head>
+	<body>
+		<p>This is some content on my index page.</p>
+	</body>
+</html>

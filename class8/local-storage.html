@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){	
+				var count = localStorage.getItem('count') || 0;
+				function updateCount(){
+					$("#count").text(count);
+					localStorage.setItem('count', count);
+				}
+
+				$("#down").on('click', function(){
+					count--;
+					updateCount();
+				});
+
+				$("#up").on('click', function(){
+					count++;
+					updateCount();
+				});
+
+				updateCount();
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Local Storage!</h1>
+		<div id="count"></div>
+		<button id="down">Down</button>
+		<button id="up">Up</button>	
+	</body>
+</html>
