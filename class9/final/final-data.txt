@@ -1,0 +1,114 @@
+Eric Raymaakers
+Final Project
+What the Sneak?
+
+Data for Sneakers:
+1. Nike Air Max Plus TN Ultra
+	description: Making its debut in 1998, Men's Nike Air Max Plus TN Ultra Shoe gets a fresh makeover with a durable leather and mesh upper for durability and breathability. The Air Max Plus TN Ultra also features multiple, visible Air-Sole units for lightweight cushioning with every step and a rubber outsole that delivers excellent traction. (2017 royal blue version depicted).
+	retail price: $170
+	original release year: 1998
+	images:
+		main image
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2017/09/NIKE-AIR-MAX-PLUS-TN-ULTRA-1-681x436.jpg?x77385
+		other images
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2017/09/NIKE-AIR-MAX-PLUS-TN-ULTRA-3-565x372.jpg?x77385
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2017/09/NIKE-AIR-MAX-PLUS-TN-ULTRA-2.jpg?x77385
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2017/09/NIKE-AIR-MAX-PLUS-TN-ULTRA-4-565x372.jpg?x77385
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2017/09/NIKE-AIR-MAX-PLUS-TN-ULTRA-5-565x372.jpg?x77385
+
+2. Off White Air Jordan 1
+	description: The OFF WHITE Air Jordan 1 is a special edition collaboration between designer Virgil Abloh’s Italian fashion label OFF WHITE and the Jordan Brand of Nike. It is inspired by the Air Jordan 1 “Chicago” colorway and features an oversized Swoosh with blue and orange stitching.
+	retail price: $190
+	original release year: 2017
+	images:
+		main image
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2017/08/AIR-JORDAN-1-18-681x454.jpg?x77385
+		other images
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2017/08/Screen-Shot-2017-10-30-at-10.35.53-AM.png?x77385
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2017/08/Screen-Shot-2017-10-30-at-10.35.19-AM.png?x77385
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2017/08/Screen-Shot-2017-10-30-at-10.34.05-AM.png?x77385
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2017/08/Screen-Shot-2017-10-30-at-10.34.25-AM.png?x77385
+
+3. Supreme x Commes des Garcons x Nike Air Force 1
+	description: The Supreme x COMME des GARÇONS x Nike Air Force 1 Low consists of a White leather upper that comes equipped with custom graphics that are screen printed on the heel portion of the shoe. Supreme x COMME des GARÇONS branding also appear on the pattern adding to the collaborative feel of the shoe. The rest of the shoe comes in White, including the branding, laces and sole unit.
+	retail price: $228
+	original release year: 2017
+	images:
+		main image
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2017/05/SUPREME-X-COMME-DES-GARCONS-X-NIKE-AIR-FORCE-1-LOW-2-565x372.jpg?x77385
+		other images
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2017/05/SUPREME-X-COMME-DES-GARCONS-X-NIKE-AIR-FORCE-1-LOW-4.jpg?x77385
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2017/05/SUPREME-X-COMME-DES-GARCONS-X-NIKE-AIR-FORCE-1-LOW-3.png?x77385
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2017/05/SUPREME-X-COMME-DES-GARCONS-X-NIKE-AIR-FORCE-1-LOW-1.jpg?x77385
+
+4. Tyler, The Creator x Converse One Star "Golf Le Fleur"
+	description: The standout feature of the Golf Le Fleur is the flower that runs along the side and replaces the usual star. The suede upper is available in three different colorways, with “Jolly Green,” ”Solar Power” and “Vanilla” versions all available. Other features of the shoe include a GOLF le FLEUR graphic on the tongue, a white midsole, and a yellow and white floral design on the sole.
+	retail price: $100
+	original release year: 2017
+	images:
+		main image
+			- https://hypb.imgix.net/image/2017/10/golf-le-fleur-converse-signature-sneaker-1.jpg?w=3510&q=90&fit=max&auto=compress%2Cformat
+		other images
+			- https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/converse-golf-le-fleur-tyler-the-creator-green-2.jpg
+			- https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/converse-golf-le-fleur-tyler-the-creator-yellow-2.jpg
+			- https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/converse-golf-le-fleur-tyler-the-creator-vanilla-1.jpg
+			- https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/converse-golf-le-fleur-tyler-the-creator-vanilla-2.jpg
+
+5. Nike Air Max 97
+	description: The Nike Air Max 97 is a Nike running shoe designed by Christian Tresser. It was originally released in 1997 but was redesigned again in 2017 in multiple instances. It was inspired by Japan’s high-speed Bullet Trains and features a mix of leather, foam, and full-length visible Air. (2017 silver version depicted).
+	retail price: $160-180
+	original release year: 1997
+	images:
+		main image
+			- https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/nike-air-max-97-silver-bullet-black-friday-restock-1.jpg
+		other images
+			- https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/11/nike-air-max-97-silver-bullet-black-friday-restock-2.jpg
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2017/11/Nike-Air-Max-97-OG-Silver-Bullet-2.jpg?x77385
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2017/11/Nike-Air-Max-97-OG-Silver-Bullet-3.jpg?x77385
+
+6. Adidas Yeezy Boost 350
+	description: The adidas Yeezy 350 Boost is a low-top sneaker designed by Kanye West. The shoes first debuted at the YEEZY Season fashion show in February 2015 and new colorways were unveiled during YEEZY Season 3 on February 11th, 2016. The sneaker features a Primeknit upper and a Boost sole. (2016 grey/orange version depicted).
+	retail price: $220
+	original release year: 2015
+	images:
+		main image
+			- https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/04/yeezy-boost-350-v2-beluga-2017-rendering.jpg
+		other images
+			- https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/04/yeezy-boost-350-v2-beluga-2017-rendering-1.jpg
+			- https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/04/yeezy-boost-350-v2-beluga-2017-rendering-2.jpg
+
+7. Balenciaga Hi-Top Speed Trainers
+	description: Harmoniously bridging the worlds of functional sports sneaker and luxury footwear silhouette, high-end fashion house Balenciaga release the Speed Trainer. Offered in a tonal black and white colorway combo, the uppers feature a knit sock construction, while the textured sole highlights innovative shock absorption and memory capabilities. Rounding out the silhouette’s minimalist aesthetic is the logo found on the side panel as well as on the rear area sole.
+	retail price: $545
+	original release year: 2016
+	images:
+		main image
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2016/11/Balenciaga-Speed-Trainer-1-681x454.jpeg?x77385
+		other images
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2016/11/Balenciaga-Speed-Trainer-3.jpg?x77385
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2016/11/Balenciaga-Speed-Trainer-4.jpg?x77385
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2016/11/Balenciaga-Speed-Trainer.jpg?x77385
+
+8. ASICS Gel-Lyte III
+	description: The Asics Gel Lyte III is a runner from Asics that was first released in 1991. The most immediately recognizable aspect of the Asics Gel Lyte III is the unorthodox split tongue set up. The Asics Gel Lyte III has long been the go-to model for retro treatment within the Asics lineage, being outfitted with countless collaborations and enjoying a particularly strong following in European markets. (2017 glacier grey version depicted)
+	retail price: $100-$200
+	original release year: 1991
+	images:
+		main image
+			- https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/asics-gel-lyte-iii-glacier-grey-HL7Y0-9696-1.jpg
+		other images
+			- https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/asics-gel-lyte-iii-glacier-grey-HL7Y0-9696-2.jpg
+			- https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/asics-gel-lyte-iii-glacier-grey-HL7Y0-9696-3.jpg
+			- https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/asics-gel-lyte-iii-glacier-grey-HL7Y0-9696-4.jpg
+
+9. Air Jordan 11
+	description: The Air Jordan XI released in 1995 and was designed by Tinker Hatfield. It was the first Nike/Jordan basketball sneaker to use patent leather and carbon fiber. The Air Jordan XI is considered to be one of the greatest sneakers of all-time. Since 2008, Jordan Brand has released an Air Jordan XI in December, and is one of the most coveted sneakers each year. (2011 hi-top version depicted)
+	retail price: $125
+	original release year: 1995
+	images:
+		main image
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2011/04/1464.jpg?x77385
+		other images
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2011/04/1464_3_.jpg?x77385
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2011/04/1464_2_.jpg?x77385
+			- https://cdn5.kicksonfire.com/wp-content/uploads/2011/04/1464_4_.jpg?x77385
