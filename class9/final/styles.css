@@ -1,4 +1,4 @@
-#header{
+header{
 	background: white;
 	width: 100%;
 	display: flex;
@@ -11,26 +11,64 @@
 	padding: 10px;
 }
 
-a.menu-item{
-	color: white;
-	font-size: 14pt;
-}
-a.menu-item:hover{
+ul li a:hover{
 	color: orange;
-}
-a.menu-item:active{
-	color: gold;
+} 
+
+ul li a{
+	color: white;
+	text-decoration: none;
+	display: block;
 }
 
 #menu-container{
 	font-family: 'Saira Extra Condensed', sans-serif;
-	padding: 10px;
+	padding: 14px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background: #551A8B;
+	background: #551A8B; 
+}
+
+#title{
+	margin-left: 10px;
+}
+
+#header-right{
+	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-between;
+ 	align-items: center;
+}
+
+#search-bar{
+	height: 30px;
+	font-size: 16pt;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	margin-right: 10px;
+	border: 2px solid orange;
+}
+
+#submit-button{
+	background: blue;
+	margin-right: 10px;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	font-size: 16pt;
+	color: white;
+}
+
+#submit-button:hover{
+	background: red;
 }
 
 body{
-	background: gold;
+	background: #fcee21;
+	font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+footer{
+	text-align: center;
+	padding: 10px;
+	background: white;
+	font-family: 'Saira Extra Condensed', sans-serif;
 }

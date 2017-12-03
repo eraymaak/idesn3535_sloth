@@ -1,14 +1,18 @@
 const headerTemplate = `
-	<header id="header">
+	<header>
 		<a href="index.html"><img src="images/what-the-sneak-logo.svg" alt="what-the-sneak-logo" class="home-logo"></a>
-		<ul id="menu-container" class="{{class}}">
-			<li class='menu-item'><a href="index.html">by retail price</a><</li>
-			<li class='menu-item'><a href="by-release.html">by release</a></li>
-			<li class='menu-item'><a href="by-brand.html">by brand</a></li>
-			<li class='menu-item'><a href="by-rating.html">by rating</a></li>
-		</ul>
+		<div id="header-right">
+			<input type="text" name="search" placeholder="find some kicks.." id="search-bar">
+			<input type="submit" value="Go!" id="submit-button">
+			<ul id="menu-container" class="{{class}}">
+				<li class='menu-item'><a href="index.html">by retail price</a></li>
+				<li class='menu-item'><a href="by-release.html">by release</a></li>
+				<li class='menu-item'><a href="by-brand.html">by brand</a></li>
+				<li class='menu-item'><a href="by-rating.html">by rating</a></li>
+			</ul>
+		</div>
 	</header>
-	<h1>{{title}}</h1>
+	<div id="title"><h1>{{title}}</h1></div>
 	`;
 
 const footerTemplate = `
