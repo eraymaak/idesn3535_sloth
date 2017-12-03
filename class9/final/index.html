@@ -5,16 +5,33 @@
 
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="utils.js"></script>
+		<script src="nav.js.html"></script>
 		<link href="normalize.css" rel="stylesheet"/>
 		<link href="styles.css" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
 
 		<script>
 			$(document).ready(function(){
-				
+				$("body").prepend(getTemplate(headerTemplate, {class: 'menu-item', title: 'by retail price'}));
+				$("body").append(footerTemplate);
 			});
-		</script>	
+			$.ajax({
+  url: "http://www.bvandorn.com/idesn-3535/apis/sloth.json",
+  success: function(response){
+    console.log(response);
+  }
+});
+		</script>
 	</head>
 	<body>
-		Weeeeeee
+		<!--<header id="header">
+			<a href="index.html"><img src="images/what-the-sneak-logo.svg" alt="what-the-sneak-logo" class="home-logo"></a>
+			<ul id="menu-container">
+				<a href="by-release.html" class="menu-item">by release</a>
+				<a href="by-rating.html" class="menu-item">by rating</a>
+				<a href="by-brand.html" class="menu-item">by brand</a>
+				<a href="index.html" class="menu-item">by retail price</a>
+			</div>
+		</header> -->
 	</body>
 </html>

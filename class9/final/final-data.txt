@@ -101,7 +101,7 @@ Data for Sneakers:
 			- https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/asics-gel-lyte-iii-glacier-grey-HL7Y0-9696-3.jpg
 			- https://newsneakernews-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/asics-gel-lyte-iii-glacier-grey-HL7Y0-9696-4.jpg
 
-9. Air Jordan 11
+9. Air Jordan XI
 	description: The Air Jordan XI released in 1995 and was designed by Tinker Hatfield. It was the first Nike/Jordan basketball sneaker to use patent leather and carbon fiber. The Air Jordan XI is considered to be one of the greatest sneakers of all-time. Since 2008, Jordan Brand has released an Air Jordan XI in December, and is one of the most coveted sneakers each year. (2011 hi-top version depicted)
 	retail price: $125
 	original release year: 1995
