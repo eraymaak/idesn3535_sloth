@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>What the Sneak?</title>
+
+		<link href="normalize.css" rel="stylesheet"/>
+		<link href="styles.css" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="utils.js"></script>
+		<script src="nav.js.html"></script>
+
+		<script>
+			$(document).ready(function(){
+				$("body").prepend(getTemplate(headerTemplate, {class: 'menu-item', title: ''}));
+				$("body").append(footerTemplate);
+				$.ajax({
+  					url: "http://www.bvandorn.com/idesn-3535/apis/sloth.json",
+ 					success: function(response){
+   					let currentSneaker;
+					const id = getParameterByName('id');
+					response.sneakers.forEach(function(sneaker){
+  						if (sneaker.id === id){
+     						currentSneaker = sneaker;
+   							}
+   							console.log(currentSneaker);
+						});
+					}
+						/*
+ 						const shoeImage = document.createElement('div');
+ 						shoeImage.id = 'shoeImageSpecs';
+ 						shoeImage.innerHTML = `<img src="${sneaker.images[0]}">`; */
+ 					});
+				});
+		</script>
+	</head>
+	<body>
+		<div id="shoe"></div>
+	</body>
+</html>

@@ -78,3 +78,35 @@ footer{
 		
 	}
 }
+
+.image-props{
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+}
+
+#sneakerListing{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 250px;
+	white-space: wrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 50px;
+}
+
+#sneaks{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.sneak-links{
+	color: black;
+	text-decoration: none;
+}
+.sneak-links:hover{
+	color: red;
+}
