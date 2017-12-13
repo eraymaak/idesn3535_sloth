@@ -9,32 +9,117 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script src="utils.js"></script>
 		<script src="nav.js.html"></script>
-
+		<script src="rating-API-final.js"></script>
 		<script>
 			$(document).ready(function(){
 				$("body").prepend(getTemplate(headerTemplate, {class: 'menu-item', title: ''}));
 				$("body").append(footerTemplate);
+				function renderRatings(){
+					$("#ratings").html("");
+					const ratings = getRatings().ratings;
+					let totalStars = 0;
+					let totalRatings = 0;
+					ratings.forEach(function(r){
+						if (r){
+							const row1 = document.createElement('div');
+							const row2 = document.createElement('div');
+							row2.id = 'input-space';
+							row1.innerText = `Stars: ${r.stars}`; 
+							row2.innerText = `Comment: ${r.comment}`;
+							$("#ratings").append(row1);
+							$("#ratings").append(row2);
+							totalRatings++;
+							totalStars += r.stars; //totalStars = totalStars + r.stars//
+						}
+					});
+					const averageRating = totalStars / totalRatings;
+					//$("#average").text("Average Rating: " + averageRating.toFixed(2));//
+					$("#allstars").css("width", (averageRating/5*100) + "%");
+				}
 				$.ajax({
   					url: "http://www.bvandorn.com/idesn-3535/apis/sloth.json",
  					success: function(response){
    					let currentSneaker;
-					const id = getParameterByName('id');
+					const value = getParameterByName('id');
 					response.sneakers.forEach(function(sneaker){
-  						if (sneaker.id === id){
-     						currentSneaker = sneaker;
+  						if (sneaker.id == value){
+     							currentSneaker = sneaker;
    							}
-   							console.log(currentSneaker);
 						});
+					const numberOfPics = currentSneaker.images.length;
+					for(var i=0; i<numberOfPics; i++){
+						const shoeImage = document.createElement('img');
+						shoeImage.id = 'shoeImage';
+						shoeImage.src = `${currentSneaker.images[i]}`;
+						$("#shoe-pics").append(shoeImage);
 					}
-						/*
- 						const shoeImage = document.createElement('div');
- 						shoeImage.id = 'shoeImageSpecs';
- 						shoeImage.innerHTML = `<img src="${sneaker.images[0]}">`; */
- 					});
-				});
+					/* const shoeImage = document.createElement('img');
+					shoeImage.id = 'shoeImage';
+					shoeImage.src = `${currentSneaker.images[0]}`;
+ 					$("#shoe").append(shoeImage); */
+ 					const shoeInfo = document.createElement('div');
+ 					shoeInfo.id = 'shoeInfo';
+ 					shoeInfo.innerHTML = `<h1>${currentSneaker.name}</h1> <div>${currentSneaker.description}</div> <div>Price: ${currentSneaker.price}</div> <div>Original Release: ${currentSneaker['release-year']}</div>`
+					$("#shoe-desc").append(shoeInfo);
+					renderRatings();
+					$("#rate-button").on('click',function(){
+						const starAmount = parseInt($("#my-dropdown").val()); //parseInt makes sure its a number//
+						const comment = $("#my-comment").val();
+						const shoeId = getParameterByName('id'); 
+						addRatings({shoe: shoeId, stars: starAmount, comment: comment});
+						renderRatings();
+						$("#my-comment").val("");
+						$("#my-dropdown").val("1");
+					});
+					}
+ 				});
+			});
 		</script>
+		<style>
+			#average-stars{
+				position: relative;
+				width: 84px;
+				height: 15px;
+			}
+			#nostars, #allstars {
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			#allstars{
+				overflow: hidden;
+				transition: width 1000ms;
+				width: 0%;
+			}
+		</style>
 	</head>
 	<body>
-		<div id="shoe"></div>
+		<div id="shoe">
+			<div id="shoe-pics"></div>
+			<div id="shoeInfoContainer">
+				<div id="shoe-desc"></div>
+				<div id="ratingContainer">
+					<div id="average"></div>
+					<div id="average-stars">
+					<div id="nostars">
+						<img src="images/nostars.svg"/>
+					</div>
+					<div id="allstars">
+						<img src="images/allstars.svg"/>
+					</div>
+					</div>
+					<div id="ratings"></div>
+					<select id="my-dropdown">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+					<input placeholder="Comment here..." id="my-comment"/>
+					<button id="rate-button">Rate!</button>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

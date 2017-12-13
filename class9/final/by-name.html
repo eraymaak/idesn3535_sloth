@@ -28,9 +28,10 @@
  					}
  				});
     			sortedSneakers.forEach(function(sneaker){
-    				const listing = document.createElement('div');
+    				const listing = document.createElement('a');
+    				listing.src = "sneakers.html?id="+sneaker.id;
     				listing.id = 'sneakerListing';
-    				listing.innerHTML = `<a class="sneak-links" href="sneaker.html"> ${sneaker.name} <img class="image-props" src="${sneaker.images[0]}"> </a>`;
+    				listing.innerHTML = `<a class="sneak-links" href="sneaker.html?id=${sneaker.id}"> ${sneaker.name} <img class="image-props" src="${sneaker.images[0]}"> </a>`;
     				$("#sneaks").append(listing);
     			});
     			}

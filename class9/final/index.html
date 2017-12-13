@@ -30,7 +30,7 @@
     					const listing = document.createElement('a');
     					listing.src = "sneakers.html?id="+sneaker.id;
     					listing.id = 'sneakerListing';
-    					listing.innerHTML = `<a class="sneak-links" href="sneaker.html"> ${sneaker.name} <div>${sneaker.price}</div> <img class="image-props" src="${sneaker.images[0]}"> </a>`;
+    					listing.innerHTML = `<a class="sneak-links" href="sneaker.html?id=${sneaker.id}"> ${sneaker.name} <div>${sneaker.price}</div> <img class="image-props" src="${sneaker.images[0]}"> </a>`;
     					$("#sneaks").append(listing);
     				});
     				}

@@ -19,15 +19,20 @@ ul li a{
 	color: white;
 	text-decoration: none;
 	display: block;
+	padding: 10px;
 }
 
 #menu-container{
 	font-family: 'Saira Extra Condensed', sans-serif;
 	padding: 14px;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction: row;
+	justify-content: space-evenly;
 	background: #551A8B; 
+}
+
+#menu-icon-container{
+	display: none;
 }
 
 #title{
@@ -68,15 +73,10 @@ body{
 
 footer{
 	text-align: center;
+	margin-top: 20px;
 	padding: 10px;
 	background: white;
 	font-family: 'Saira Extra Condensed', sans-serif;
-}
-
-@media(max-width: 900px){
-	#header-right{
-		
-	}
 }
 
 .image-props{
@@ -94,6 +94,8 @@ footer{
 	overflow: hidden;
 	text-overflow: ellipsis;
 	margin-bottom: 50px;
+	margin-right: 20px;
+	margin-left: 10px;
 }
 
 #sneaks{
@@ -109,4 +111,182 @@ footer{
 }
 .sneak-links:hover{
 	color: red;
+}
+
+#shoe{
+	display: flex;
+	flex-direction: row;
+}
+
+#shoe-info{
+	display: flex;
+	flex-direction: column;
+}
+
+#shoe-pics{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 10px;
+	width: 100%;
+}
+
+#shoeInfo{
+	padding: 10px;
+}
+
+#shoeImage{
+	width: 100%; 
+}
+
+#shoeInfoContainer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+#ratingContainer{
+	padding: 10px;
+	color: blue;
+}
+
+#input-space{
+	margin-bottom: 10px;
+}
+
+#my-comment{
+	width: 65%;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	height: 30px;
+	font-size: 12pt;
+}
+
+#rate-button{
+	width: 65px;
+	height: 30px;
+	font-size: 12pt;
+	font-family: 'Saira Extra Condensed', sans-serif;
+	background: #551A8B;
+	color: white;
+}
+
+#average-stars{
+	margin-bottom: 10px;
+}
+
+@media(max-width: 768px){
+	header{
+		background: white;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	#header-right{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		background: #551A8B;
+	}
+	ul li a{
+		color: white;
+		text-decoration: none;
+		display: block;
+		padding: 10px;
+		margin-left: 20px;
+		margin-right: 20px;
+		font-size: 16pt;
+	}
+	#search-bar{
+		display: none;
+	}
+	#submit-button{
+		display: none;
+	}
+	#menu-container{
+		font-family: 'Saira Extra Condensed', sans-serif;
+		padding: 14px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		background: #551A8B;
+		flex-wrap: wrap; 
+	}
+	.home-logo{
+		width: 300px;
+		padding: 10px;
+	}
+	#shoe{
+		display: flex;
+		flex-direction: column;
+	}
+	#shoe-info{
+		display: flex;
+		flex-direction: column;
+		order: 1;
+	}
+	#shoe-pics{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 10px;
+		order: 2;
+		align-items: center;
+	}
+	#shoeInfo{
+		padding: 10px;
+	}
+	#shoeImage{
+		width: 75%; 
+	}
+}
+
+@media(max-width: 375px){
+	header{
+		background: white;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	#header-right{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	ul li a{
+		color: white;
+		text-decoration: none;
+		display: block;
+		padding: 10px;
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+	#search-bar{
+		display: none;
+	}
+	#submit-button{
+		display: none;
+	}
+	#menu-icon-container{
+		display: block;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		background: #551A8B; 
+	}
+	.menu-icon{
+		width: 75px;
+	}
+	#menu-container{
+		display: none;
+	}
+	#shoeImage{
+		width: 100%; 
+	}
 }

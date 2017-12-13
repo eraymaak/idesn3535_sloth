@@ -21,7 +21,7 @@
 					}
 				});
 				const averageRating = totalStars / totalRatings;
-				$("#average").text("Average Rating: " + averageRating.toFixed(2));
+				//$("#average").text("Average Rating: " + averageRating.toFixed(2));//
 				$("#allstars").css("width", (averageRating/5*100) + "%");
 			}
 			$(document).ready(function(){
@@ -29,7 +29,8 @@
 				$("#rate-button").on('click',function(){
 					const starAmount = parseInt($("#my-dropdown").val()); //parseInt makes sure its a number//
 					const comment = $("#my-comment").val();
-					addRatings({stars: starAmount, comment: comment});
+					const shoe = 
+					addRatings({shoe: shoe, stars: starAmount, comment: comment});
 					renderRatings();
 					$("#my-comment").val("");
 					$("#my-dropdown").val("1");
