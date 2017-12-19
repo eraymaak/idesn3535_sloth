@@ -19,8 +19,9 @@
 					const ratings = getRatings().ratings;
 					let totalStars = 0;
 					let totalRatings = 0;
+					const ratingSignifier = getParameterByName('id');
 					ratings.forEach(function(r){
-						if (r){
+						if (r.shoe == ratingSignifier){
 							const row1 = document.createElement('div');
 							const row2 = document.createElement('div');
 							row2.id = 'input-space';
@@ -36,6 +37,10 @@
 					//$("#average").text("Average Rating: " + averageRating.toFixed(2));//
 					$("#allstars").css("width", (averageRating/5*100) + "%");
 				}
+				$("#ratings").toggle();
+				$("#check").click(function(){
+					$("#ratings").toggle();
+				});
 				$.ajax({
   					url: "http://www.bvandorn.com/idesn-3535/apis/sloth.json",
  					success: function(response){
@@ -98,6 +103,13 @@
 			<div id="shoe-pics"></div>
 			<div id="shoeInfoContainer">
 				<div id="shoe-desc"></div>
+				<div id="hider-slider">
+					<label class="switch">
+ 						<input id="check" type="checkbox">
+ 						<span class="slider round"></span>
+					</label>
+					<h4 id="slider-label">Hide/Show Ratings</h4>
+				</div>
 				<div id="ratingContainer">
 					<div id="average"></div>
 					<div id="average-stars">

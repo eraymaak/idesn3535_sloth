@@ -1,9 +1,10 @@
-const binID = "11tx57";
+// const binID = "11tx57";
+const binID = "a282bf00-e0d6-11e7-8b56-59b3a0764930";
 
 function getRatings(){
 	let ratings;
 	$.ajax({
-		url: "https://api.myjson.com/bins/"+binID,
+		url: "https://jsonblob.com/api/jsonBlob/"+binID,
 		async: false,
 		success: function(data){
 			ratings = data;
@@ -16,7 +17,7 @@ function addRatings(rating){
 	const newRatings = this.getRatings();
 	newRatings.ratings.push(rating);
 	$.ajax({
-    	url:"https://api.myjson.com/bins/"+binID,
+    	url:"https://jsonblob.com/api/jsonBlob/"+binID,
    		type:"PUT",
     	data:JSON.stringify(newRatings),
     	contentType:"application/json; charset=utf-8",
